@@ -1,0 +1,163 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #dddcdc;
+  font-size: 14px;
+
+  font: normal;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+
+}
+
+.container{
+  width: 97%;
+  margin:0 auto;
+}
+
+/* Header start */
+
+header{
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+
+}
+
+.header__wrapper{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.title-h1{
+  font-size: 24px;
+  align-items: center;
+  font: 600;
+  margin: auto;
+  padding-left: 130px;
+} 
+
+.header__block{
+  width: 10%;
+}
+.header__block:last-child{
+  text-align: right;
+}
+
+.nav{
+  display: flex;
+  
+}
+
+
+.nav__link{
+  margin-right: 20px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 100;
+  position: relative;
+  
+}
+.nav__link:last-child{
+  margin-right: 0;
+}
+
+.nav__link:after{
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  opacity: 0;
+  transition: .2s ease;
+}
+.nav__link:hover:after{
+  opacity: 1;
+}
+
+.nav__link.active:after{
+  opacity: 1;
+
+}
+
+.header__lng {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.header__lng-link{
+  color: #0000007e;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 6px;
+} 
+
+.header__lng-link.active{
+  color: #000000;
+
+}
+
+/* Header end */
+
+/* Intro start */
+
+.intro {
+  background: url("images/introbg.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+
+  
+}
+
+.intro__content{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-left: 350px; 
+  justify-content: center;
+
+
+  
+}
+.intro__block{
+  justify-content: center;
+
+}
+
+.intro__title {
+  font-size: 12px;
+  font-weight: 100;
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  color: #000;
+  text-transform: uppercase;
+  
+}
+
+
+/* Intro end */
